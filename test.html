@@ -1,0 +1,71 @@
+<html>
+<head>
+<style>
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville);
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body, html {
+  font-family: "Montserrat", sans-serif;
+  background: #272727;
+}
+
+h1 {
+  font-family: "Libre Baskerville", serif;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 80px;
+  color: #ffffff;
+}
+
+p {
+  margin: 20px auto 75px auto;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  width: 600px;
+}
+p a {
+  transition: color 0.2s linear, border-bottom 0.2s linear;
+  border-bottom: 2px solid white;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 5px;
+}
+p a:hover {
+  border-bottom: 2px solid #FF7F50;
+  color: #FF7F50;
+}
+
+/* Flex style */
+.flex {
+  margin: 0 auto;
+  display: flex;
+  height: 400px;
+  width: 50%;
+}
+.flex div {
+  flex-grow: 1;
+  transition: flex-grow 0.5s ease-in-out;
+}
+.flex div:hover {
+  flex-grow: 3;
+}
+</style>
+</head>
+<h1>Flexample</h1>
+
+
+<div class="flex">
+  <div style="background-color:coral;"></div>
+  <div style="background-color:lightblue;"></div>
+  <div style="background-color:khaki;"></div>
+  <div style="background-color:pink;"></div>
+  <div style="background-color:lightgrey;"></div>
+</div>
